@@ -40,8 +40,7 @@ body {
 
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,6 +56,10 @@ body {
 .advantages-title-main,
 .project-title-main {
   display: none;
+}
+
+.img {
+  display: block;
 }
 
 .title-name {
@@ -113,6 +116,7 @@ body {
 .navigation {
   display: flex;
   margin-right: auto;
+  align-items: center;
 }
 
 .menu {
@@ -120,6 +124,8 @@ body {
 }
 
 .menu-button {
+  padding: 24px 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -170,16 +176,16 @@ body {
 
 .footer-space {
   background: var(--background-section-color);
+  padding: 100px 0;
 }
 
-.footer-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.footer-space .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-about {
   width: 264px;
-  margin-top: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -192,8 +198,6 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
-  margin-bottom: 120px;
-
   background: var(--background-section-color);
 }
 
@@ -202,7 +206,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
 
   font-weight: 700;
   font-size: 56px;
@@ -212,11 +216,13 @@ body {
 }
 
 .button-hero {
-  width: 169px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: auto;
-  padding-right: auto;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -227,6 +233,7 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: var(--button-normal-color);
+  border: none;
   cursor: pointer;
 }
 
@@ -237,15 +244,18 @@ body {
 
 /* <!-- advantages -->  */
 
+.advantages-section {
+  padding: 120px 0;
+}
+
 .advantages-list {
   display: flex;
-  margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .advantages-item {
-  width: 264px;
+  width: calc((100% - 72px) / 4);
   margin-right: 24px;
 }
 
@@ -260,7 +270,7 @@ body {
 /* <!-- type of project --> */
 
 .type-project-section {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .type-project-title {
@@ -277,13 +287,13 @@ body {
 
 .type-project-list {
   display: flex;
-  margin-bottom: 120px;
   margin-left: auto;
   margin-bottom: auto;
 }
 
 .type-project-item {
   margin-right: 24px;
+  width: calc((100% - 1px) / 3);
 }
 
 .type-project-item:nth-last-child(-n + 1) {
@@ -293,6 +303,8 @@ body {
 /* <!-- our team --> */
 
 .section-team {
+  padding: 120px 0;
+
   background-color: #f4f4fd;
 }
 
@@ -308,11 +320,6 @@ body {
   color: var(--main-title-color);
 }
 
-.team-content {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .team-list {
   display: flex;
 }
@@ -320,6 +327,7 @@ body {
 .team-item {
   margin-right: 24px;
   width: 264px;
+  border-radius: 0px 0px 4px 4px;
 
   background-color: var(--background-color);
 }
@@ -329,11 +337,7 @@ body {
 }
 
 .team-item-text {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
-
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -343,7 +347,7 @@ body {
 
 /* -----------PAGE portfolio-------------------- */
 .portfolio-section {
-  margin-top: 96px;
+  padding: 96px 0 120px;
 }
 
 /* <!-- filter buttons --> */
